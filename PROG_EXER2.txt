@@ -1,0 +1,30 @@
+//BERNAS, FRANCIS JOSEPH E.
+//BSCoE 2-1D
+#include <iostream>
+using namespace std;
+int main()
+{
+	string LN, FN, MI, SN, bday;
+	
+	cout << "Enter your student number: ";
+	cin >> SN;
+	
+	cout << "Enter last name: ";
+	cin >> LN;
+	cout << "Enter first name: ";
+	cin >> FN;
+	cout << "Enter middle initial: ";
+	cin >> MI;
+	
+	cout << "Enter birthdate(mm/dd/yyyy): ";
+	cin >> bday;
+
+    cout << endl;
+    
+	cout << "Your Profile: " << endl;
+	cout << "Student number: " << SN << endl;
+	cout << "Name: " << FN << " " << MI << " " << LN << endl;
+	cout << "Birthdate: " << bday << endl;
+
+	return 0;
+}

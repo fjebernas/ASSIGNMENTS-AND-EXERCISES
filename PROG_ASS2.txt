@@ -1,0 +1,24 @@
+//BERNAS, FRANCIS JOSEPH E.
+//BSCoE 2-1D
+// This program will calculate the weight of a steel cylinder
+// Given the density of steel is 0.284 lb/in^3
+#include <iostream> // Headers, also preprocessors
+#include <iomanip>  // These three are the preprocessor directives used
+#include <cmath>
+using namespace std;
+int main()                                                               // proper spacing and margin for proper form and style
+{
+   const double PI = 3.1416;
+   const double DENSITY = 0.284;
+   double radius, height, weight;
+   cout << "Enter the radius of the cylinder (in inches):  ";
+   cin >> radius;                                                        // input
+   cout << "Enter the height of the cylinder (in inches):  ";
+   cin >> height;                                                        // input
+   weight = DENSITY * PI * pow(radius,2) * height;
+   cout << setiosflags(ios:: fixed)
+         << setiosflags(ios::showpoint)
+         << setprecision(4)
+         << "The cylinder weighs " << weight << " pounds " << endl;      // output
+   return 0;
+}

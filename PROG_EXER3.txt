@@ -1,0 +1,27 @@
+//BERNAS, FRANCIS JOSEPH E.
+//BSCoE 2-1D
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	double m1, m2, d, f, k;
+	k = 6.67 * pow(10,-8);
+	
+	cout << "Enter first mass: " << endl;
+	cin >> m1;
+	
+	cout << "Enter second mass: " << endl;
+	cin >> m2;
+	
+	cout << "Enter distance: " << endl;
+	cin >> d;
+	
+	f =  k * ( (m1 * m2) / pow(d,2) );
+	
+	cout << "The force between the bodies is: " << f << endl;
+	
+	return 0;
+	
+}

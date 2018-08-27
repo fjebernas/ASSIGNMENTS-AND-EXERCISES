@@ -1,0 +1,28 @@
+// BERNAS, FRANCIS JOSEPH E.
+// BSCoE 2-1D
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    double minor, major, circ;
+    
+    cout << "This program calculates the circumference of an ellipse with the given minor and major radii in inches." << endl;
+    
+    // prompts the user for the given
+    
+    cout << "Enter minor radius: ";
+    cin >> minor;
+    
+    cout <<"Enter major radius: ";
+    cin >> major;
+    
+    // Calculates the circimference
+    
+    circ = 3.14 * sqrt( pow(minor + major, 2) );
+    
+    cout << "The circumference of the ellipse is " << circ << " inches.";
+    
+    return 0;
+    
+}

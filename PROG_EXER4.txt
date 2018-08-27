@@ -1,0 +1,31 @@
+//BERNAS, FRANCIS JOSEPH E.
+//BSCoE 2-1D
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double m1, m2, d, f;
+	const double k=0.0000000667;
+	double num;
+	double lb;
+	cout << "Determining the force" << endl;
+	cout << "Enter the first mass: ";
+	cin >> m1;
+	cout << "Enter the second mass: ";
+	cin >> m2;
+	cout << "Enter the distance: ";
+	cin >> d;
+	cout << "Determining the number of rice bags" << endl;
+	cout << "Enter the amount of rice bag in pounds: ";
+	cin >> lb;
+	
+	f = k *( (m1 * m2)/(d * d) );
+	
+	num= 2205/lb;
+	cout << "The number of bags of rice in one metric ton is :" << num << endl;
+	cout << "The force is " << f << endl;
+	
+	return 0;
+}
+

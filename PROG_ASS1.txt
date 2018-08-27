@@ -1,0 +1,42 @@
+//BERNAS, FRANCIS JOSEPH E.
+//BSCoE 2-1D
+// Passed or Failed
+#include <iostream>
+using namespace std;
+
+/* used: char, int, float, string, else,... */
+
+int main()
+{
+string FN;
+string LN;
+char MI;
+float a, b, c, d, e, f, g, h, i, j;
+float SumGr;
+int FG;
+
+/* This program collects scores up to 100. Otherwise not valid */
+
+cout << ("Enter first name:");
+cin >> FN;
+cout << ("Enter last name:");
+cin >> LN;
+cout << ("Enter middle initial:");
+cin >> MI;
+
+cout << ("Enter 10 grades:");
+cin >> a >> b >> c >> d >> e >> f >> g >> h >> i >> j;
+
+SumGr = a + b + c + d + e + f + g + h + i + j;
+FG = SumGr/10;
+
+cout << "\n\n" << FN << ' ' << MI << ". " << LN << ",\n\n";
+
+if (FG >=75) {
+cout << "Your final grade is " << FG << ". PASS";
+} else {
+cout << "Your final grade is " << FG << ". FAIL";
+}
+
+return 0;
+}

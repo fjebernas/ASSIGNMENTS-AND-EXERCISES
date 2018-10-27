@@ -1,0 +1,48 @@
+/* BERNAS, FRANCIS JOSEPH E.
+   BSCoE 2-1D
+*/
+
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "wakes up" << endl;
+    int stp = 1;
+    
+    while (stp != 10){
+        cout << "steps\n";
+        stp++;
+    }
+    
+    cout << "gets dish,water and rice\n";
+    int et = 1;
+    
+    while (et != 15){
+        cout << "eat\n";
+        et++;
+    }
+    
+    cout << "washes plate\n";
+    int rns = 1;
+    
+    while (rns != 4){
+        cout << "rinse\n";
+        rns++;
+    }
+    
+    cout << "takes a bath\n";
+    int rns2 = 1;
+    
+    cout << "washes body\n";
+    
+    while (rns2 != 10){
+        cout << "rinse\n";
+        rns2++;
+    }
+    
+    cout << "towel dry\n";
+    cout << "dress up\n";
+    
+    cout << "commute to school";
+    
+    return 0;
+}
